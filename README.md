@@ -39,11 +39,25 @@ Proceso: Se validan los datos y si son correcto y ademas se han rellando todos l
 
 Obtenener mueble: Recupera la informacion del mueble en especifico por medio del su id y devuelve los datos para poder modificarlos.
 
-Eliminar muebleI Elimina un mueble seleccionado en la tabla de inventario mediante la busqueda de su id para posteriormente eliminarlo de la base de datos.
+Eliminar mueble Elimina un mueble seleccionado en la tabla de inventario mediante la busqueda de su id para posteriormente eliminarlo de la base de datos.
 
 
 ## Ventas 
 
-El módulo de ventas permite registrar nuevas transacciones de venta mediante un formulario. El formulario incluye campos para seleccionar un mueble registrado, indicar el precio y especificar la cantidad a comprar. Es importante que la cantidad solicitada no exceda la cantidad disponible en el inventario. Una vez que el formulario se ha completado correctamente, la venta se registra y se muestra en una tabla con la información ingresada.
+Registrar Ventas: permite registrar una nueva venta.
+
+Validaciones:
+
+*inventario_id: debe existir en la base de datos.
+
+*fehca: debe ser una fecha válida.
+
+*Cantidad_productos: debe ser un numero entero positivo y no exceder la cantidad disponible en el inventario.
+
+*precio: No debe ser un numero negativo.
+
+*tipo de pago: se debe selecionar entre credito o contado.
+
+Una vez rellenado los datos del formulario compliendo con las validaciones se registra la venta y actualizando el inventario.
 
 
